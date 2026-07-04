@@ -9,7 +9,7 @@
     <application
         android:allowBackup="false"
         android:label="Phone2PC Audio"
-        android:theme="@android:style/Theme.Material.Light">
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
 
         <activity
             android:name=".MainActivity"
