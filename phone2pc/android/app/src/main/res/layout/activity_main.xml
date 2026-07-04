@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PC IP address (use 127.0.0.1 for USB/adb reverse)"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/editIp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="127.0.0.1"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Port"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/editPort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="6000"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnConnect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Start Streaming" />
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Status: idle"
+        android:textSize="14sp" />
+
+</LinearLayout>
