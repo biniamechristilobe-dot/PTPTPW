@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - 'android/**'
+      - 'phone2pc/android/**'
 
 jobs:
   build:
@@ -20,17 +20,17 @@ jobs:
 
       - name: Grant execute permission for gradlew
         run: |
-          cd android
+          cd phone2pc/android
           gradle wrapper --gradle-version 8.5
           chmod +x gradlew
 
       - name: Build debug APK
         run: |
-          cd android
+          cd phone2pc/android
           ./gradlew assembleDebug
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
         with:
           name: phone2pc-audio-debug-apk
-          path: android/app/build/outputs/apk/debug/app-debug.apk
+          path: phone2pc/android/app/build/outputs/apk/debug/app-debug.apk
